@@ -1,0 +1,87 @@
+body {
+    font-size: 1.125rem;
+    font-family: 'Roboto', sans-serif;
+    min-width: 1080px;
+    color: #000000;
+    line-height: 1.3;
+}
+
+h1, h2, h3, h4 {
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h3, h4, h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+p {
+    margin: 0rem 0rem 1.25rem 0rem;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.15s ease-in;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.button {
+    border: none;
+    color: #000000;
+    font-size: 2.25rem;
+    font-family: 'Blogger Sans', sans-serif;
+    background: transparent;
+    background: url('../images/button.png') 50% 50% no-repeat;
+    font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    white-space: nowrap;
+    min-width: 540px;
+    min-height: 150px;
+    border-radius: 80px;
+    line-height: 1;
+    padding-bottom: 20px;
+    word-spacing: 4px;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+        color: darken(#ffff8c, 10%);
+        transform: scale(0.99);
+    }
+}
+
+.page-center {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.layout-center {
+    max-width: 1170px;
+    margin: 0 auto;
+}
