@@ -1,6 +1,12 @@
 $(document).ready(function(){
+    const $scrollButton = $(".scroll-button");
+    const overlay = $(".overlay");
 
-	$('.scroll-button').on("click", function() {
+    overlay.on("click", function(){
+        $(this).hide();
+    })
+
+	$scrollButton.on("click", function() {
         const $body = $('html, body');
 
         $body.animate({
@@ -8,3 +14,8 @@ $(document).ready(function(){
         }, 500);
     });
 });
+
+
+function showOverlay() {
+    $(".overlay").show();
+}

@@ -5,13 +5,20 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
     position: relative;
 
+    @media only screen and (min-width: 1200px){
+        min-height: 100vh;
+    }
+    
     &__scroll-holder {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
+        position: relative;
+        
+        @media only screen and (min-width: 1200px){
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
 
         .scroll-button {
             position: absolute;
@@ -27,7 +34,12 @@
                 background: url('../images/mouse-scroll-black.png') 50% 50% no-repeat;
             }
 
+            @media only screen and(max-width: 1199px) {
+                animation: stop;
+            }
+
         }
+
     }
 }
 
@@ -35,12 +47,16 @@
     display: none;
     width: 100vw;
     height: 100vh;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     position: fixed;
     left: 0; top: 0;
     background-color: rgba(0,0,0,.9);
     z-index: 1000;
+
+    @media only screen and(max-width: 1199px) {
+        display: none !important;
+    }
     
     &__inner {
         display: flex;
@@ -64,6 +80,15 @@
             bottom: -195px;
             left: -240px;
             z-index: -1;
+        }
+
+
+        @media only screen and(max-width: 1500px) {
+            max-width: 800px;
+        }
+      
+        @media only screen and(max-width: 1400px) {
+            max-width: 600px;
         }
     }
 
@@ -103,7 +128,7 @@
     }
 
     &__button-holder {
-        padding-bottom: 75px;
+        padding-bottom: 120px;
     }
 }
 
@@ -129,6 +154,10 @@
 
     &__inner {
         padding: 0px 40px 35px;
+    }
+
+    &__button-holder {
+        padding-bottom: 35px;
     }
 }
 
@@ -169,7 +198,7 @@
     }
 
     &__button-holder {
-        padding-bottom: 75px;
+        padding-bottom: 120px;
     }
 }
 
